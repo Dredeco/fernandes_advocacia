@@ -4,6 +4,8 @@ import HeaderLine from '@/components/HeaderLine'
 
 import styles from '@/styles/Home.module.sass'
 import Navbar from '@/components/Navbar'
+import HomePage from './HomePage.js/Index'
+import About from './About'
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <main>
         <HeaderLine />
         <Navbar />
+        <HomePage />
+        <About />
       </main>
     </>
   )

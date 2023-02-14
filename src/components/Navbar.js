@@ -18,14 +18,14 @@ export default function Navbar() {
       let [open,setOpen]=useState(false);
 
   return (
-    <div>
-        <span>Fernandes Advocacia</span>
+    <div className={styles.navbar}>
+        <span className={styles.logo}>Fernandes Advocacia</span>
 
         <div className={`${styles.navLinks} ${open ? styles.open : styles.close}`}>
-            <ul className="flex flex-col relative w-full transition-all duration-500">
+            <ul className="">
                 {
                 navLinks.map((link)=>(
-                    <li key={link.name} className='relative px-2 text-xl w-full'>
+                    <li key={link.name} className={styles.links}>
                         <a onClick={()=>setOpen(!open)} href={link.link} className='flex py-3 border lg:border-none border-zinc-800 justify-center w-full h-full bg-black hover:bg-green-700 lg:hover:bg-black lg:hover:text-green-600 duration-500'>{link.name}</a>
                     </li>
                 ))
@@ -33,7 +33,7 @@ export default function Navbar() {
             </ul>
         </div>
 
-        <div onClick={()=>setOpen(!open)} className=''>
+        <div onClick={()=>setOpen(!open)} className={styles.bars_menu}>
                     {open ? <FaTimes /> : <FaBars />}
         </div>
     </div>
