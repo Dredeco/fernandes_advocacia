@@ -6,8 +6,8 @@ import styles from '@/styles/Navbar.module.sass'
 export default function Navbar() {
     let navLinks =[
         {name:"Início",link:"#home"},
-        {name:"Habilidades",link:"#skills"},
-        {name:"Projetos",link:"#projects"},
+        {name:"Escritório",link:"#about"},
+        {name:"Serviços",link:"#projects"},
         {name:"Contato",link:"#contact"},
       ];
     let socialLinks =[
@@ -21,12 +21,12 @@ export default function Navbar() {
     <div className={styles.navbar}>
         <span className={styles.logo}>Fernandes Advocacia</span>
 
-        <div className={`${styles.navLinks} ${open ? styles.open : styles.close}`}>
+        <div className={`${styles.mobile_links} ${open ? "" : styles.close}`}>
             <ul className="">
                 {
                 navLinks.map((link)=>(
                     <li key={link.name} className={styles.links}>
-                        <a onClick={()=>setOpen(!open)} href={link.link} className='flex py-3 border lg:border-none border-zinc-800 justify-center w-full h-full bg-black hover:bg-green-700 lg:hover:bg-black lg:hover:text-green-600 duration-500'>{link.name}</a>
+                        <a onClick={()=>setOpen(!open)} href={link.link} className=''>{link.name}</a>
                     </li>
                 ))
                 }

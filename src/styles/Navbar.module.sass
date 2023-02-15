@@ -1,59 +1,59 @@
 .navbar
     position: sticky
+    top: 0
     display: flex
+    justify-content: space-between
+    align-items: center
     width: 100%
     height: 5rem
-    align-items: center
+    background-color: #1D4B66
     padding: 0 20px
-    justify-content: space-between
-    font-size: 1.3rem
-    background-color: #1D4B66 
-    color: #F4EFE7
+    font-size: 1.5rem
     border-top: 1px solid #D28930
     border-bottom: 1px solid #D28930
+    z-index: 99
+    *
+        background-color: #1D4B66
 
-.logo
-    font-weight: 300
-
-.bars_menu
-    padding-top: 5px
-
-.navLinks
-    display: flex
-    flex-direction: column
-    background-color: #1D4B66
-    transition-property: all
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-    transition-duration: 150ms
-
-.links
-    text-decoration-style: none
-    list-style-type: none
-    display: flex
-    position: relative
-    justify-content: center
-    padding: .7rem 0
-    background-color: #1D4B66
-    left: -40px
-    width: 112%
-    border-bottom: 2px solid #D28930
-    a
-        text-decoration: none
+    .logo
         color: #F4EFE7
-    
+        font-family: 'Cinzel', serif
+        width: fit-content
+
+    .bars_menu
+        justify-content: end
+        width: fit-content
+        color: #F4EFE7
+        margin-bottom: -5px
+        svg
+
+.mobile_links
+    position: absolute
+    display: flex
+    width: 100%
+    left: 0
+    top: 4.9rem
+    transition: 1s
+    border: 1px solid #D28930
+    *
+        background-color: #F4EFE7
+    ul
+        list-style: none
+        display: flex
+        flex-direction: column
+        text-align: center
+        li
+            position: relative
+            left: -20px
+            padding: .5rem 0
+            border-bottom: 1px solid #D28930
+            &:hover, &:active
+                    background-color: #1D4B66
+            a
+                color: #D28930
+                background-color: rgba(0, 0, 0, 0)
+                text-decoration: none
 
 .close
-    position: absolute
-    width: 100%
-    left: 0
-    top: -20rem
-    transition-property: all
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-    transition-duration: 150ms
-    z-index: -1
+    left: -50rem
 
-.open
-    position: absolute
-    top: 5rem
-    width: 100%
-    left: 0

@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import HeaderLine from '@/components/HeaderLine'
+import HeaderLine from '@/pages/components/HeaderLine'
 
 import styles from '@/styles/Home.module.sass'
-import Navbar from '@/components/Navbar'
-import HomePage from './HomePage.js/Index'
-import About from './About'
+
+import Navbar from '@/pages/components/Navbar'
+import HomePage from './components/ImageSection'
+import About from './components/About'
+import ImageSection from './components/ImageSection'
 
 export default function Home() {
   return (
@@ -18,11 +19,12 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
-      <main>
+      <main className={styles.main}>
         <HeaderLine />
         <Navbar />
-        <HomePage />
+        <ImageSection />
         <About />
       </main>
     </>
