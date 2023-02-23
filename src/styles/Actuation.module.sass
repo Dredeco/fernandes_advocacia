@@ -1,0 +1,53 @@
+.actuation
+    width: 100%
+    padding-top: 5rem
+    text-align: center
+    h1
+        text-decoration: underline
+        text-underline-offset: 10px 
+        text-decoration-color: #D28930
+        padding-bottom: 3rem
+
+    .actuation_list
+        list-style: none
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+
+        .actuation_list_item
+            position: relative
+            left: -20px
+            margin: 1rem 1rem
+
+            .item_wrapper
+                width: 100%
+                text-align: center
+    
+                .item_header
+                    color: #000
+                    background-color: #D28930
+                    padding: 1rem .5rem
+                    border-top-left-radius: 20px
+                    border-top-right-radius: 20px
+                    svg
+                        font-size: 50px
+                    svg, h2
+                        background-color: rgba(0, 0, 0, 0)
+
+                .item_content
+                    width: 100%
+                    p
+                        font-size: 18px
+                        border-end-end-radius: 20px
+                        border-end-start-radius: 20px
+                        padding: 1rem .5rem
+                        border: 1px solid #D28930
+
+    
+@media screen and (min-width: 820px)
+    .actuation_list_item
+        width: 30%
+        .item_content
+            p
+                min-height: 270px

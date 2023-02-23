@@ -7,6 +7,8 @@ import Navbar from '@/pages/components/Navbar'
 import HomePage from './components/ImageSection'
 import About from './components/About'
 import ImageSection from './components/ImageSection'
+import Actuation from './components/Actuation'
+import Lawyers from './components/Lawyers'
 
 export default function Home() {
   return (
@@ -26,6 +28,8 @@ export default function Home() {
         <Navbar />
         <ImageSection />
         <About />
+        <Actuation />
+        <Lawyers />
       </main>
     </>
   )

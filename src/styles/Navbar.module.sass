@@ -55,5 +55,42 @@
                 text-decoration: none
 
 .close
-    left: -50rem
+    left: -99rem
+
+@media screen and (min-width: 900px)
+    .navbar
+        justify-content: space-between
+
+    .bars_menu
+        display: none
+
+    .mobile_links
+        display: block
+        position: static
+        left: 0
+        top: 0
+        width: auto
+        transition: none
+        border: none
+        *
+            background-color: rgba(0, 0, 0, 0)
+        ul
+            list-style: none
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            text-align: center
+            li
+                width: auto
+                position: relative
+                left: 0
+                padding: .5rem 0.5rem
+                border-bottom: none
+                a
+                    color: #F4EFE7
+                    background-color: rgba(0, 0, 0, 0)
+                    text-decoration: none
+                    font-size: 18px
+                    &:hover, &:active
+                        color: #D28930
 

@@ -7,7 +7,8 @@ export default function Navbar() {
     let navLinks =[
         {name:"Início",link:"#home"},
         {name:"Escritório",link:"#about"},
-        {name:"Serviços",link:"#projects"},
+        {name:"Áreas de Atuação",link:"#actuation"},
+        {name: "Advogados", link: "#lawyers"},
         {name:"Contato",link:"#contact"},
       ];
     let socialLinks =[
