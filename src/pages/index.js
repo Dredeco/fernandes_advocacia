@@ -9,6 +9,7 @@ import About from './components/About'
 import ImageSection from './components/ImageSection'
 import Actuation from './components/Actuation'
 import Lawyers from './components/Lawyers'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <About />
         <Actuation />
         <Lawyers />
+        <Contact />
       </main>
     </>
   )

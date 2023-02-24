@@ -1,0 +1,68 @@
+.contact
+    width: 100%
+    padding-top: 5rem
+    text-align: center
+    h1
+        text-decoration: underline
+        text-underline-offset: 10px 
+        text-decoration-color: #D28930
+    p
+        font-size: 20px
+        padding-top: 1rem
+        padding-bottom: 3rem
+    
+    .contact_wrapper
+        display: flex
+        flex-wrap: wrap
+        .contact_form
+            text-align: start
+            padding: 0 20px
+            label
+                font-weight: 600
+            input, textarea
+                height: 40px
+                background-color: #fff
+                border: 1px solid #D28930
+                padding: 5px 5px
+                margin: 5px 0
+                &:last-child
+                    height: 100px
+                    resize: vertical
+            button
+                margin: 20px 0
+                width: 100px
+                height: 50px
+                background-color: #fff
+                border: 1px solid #D28930
+                &:hover
+                    background-color: #D28930
+                    color: #fff
+
+        .contact_info
+            margin: 10px 0
+            h2
+                margin-bottom: 20px
+                text-decoration: underline
+                text-underline-offset: 10px 
+                text-decoration-color: #D28930
+            svg
+                display: inline-block
+                width: auto
+                margin-right: 10px 
+            strong
+                font-size: 20px
+            p
+                font-size: 20px
+                padding-top: 3px
+                padding-bottom: 0rem
+                display: flex
+                justify-content: center
+        .contact_map
+            iframe
+                border: 1px solid #D28930
+
+@media screen and (min-width: 900px)
+    .contact_form
+        width: 50%
+    .contact_info
+        width: 50%
