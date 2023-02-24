@@ -10,6 +10,7 @@ import ImageSection from './components/ImageSection'
 import Actuation from './components/Actuation'
 import Lawyers from './components/Lawyers'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
         <Actuation />
         <Lawyers />
         <Contact />
+        <Footer />
       </main>
     </>
   )

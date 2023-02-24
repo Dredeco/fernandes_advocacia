@@ -4,19 +4,23 @@ import { GrMail } from 'react-icons/gr'
 
 import styles from '@/styles/Contact.module.sass'
 
-export default function 
-Contact() {
+export default function Contact() {
+
+  function submit(e) {
+    e.preventDefault()
+  }
+
   return (
     <div id="contact" className={styles.contact}>
         <h1>Contato</h1>
         <p>Envie uma mensagem ou entre em contato via Whatsapp (22) XXXXX-XXXX</p>
 
         <div className={styles.contact_wrapper}>
-            <form className={styles.contact_form}>
-                <label>Nome:</label><input type="text" />
-                <label>Telefone:</label><input type="number" />
-                <label>E-mail:</label><input type='email' />
-                <label>Mensagem:</label><textarea />
+            <form className={styles.contact_form} onSubmit={submit}>
+                <label>Nome:</label><input required type="text" />
+                <label>Telefone:</label><input required type="number" />
+                <label>E-mail:</label><input required type='email' />
+                <label>Mensagem:</label><textarea required />
                 <button>Enviar</button>
             </form>
 
