@@ -30,7 +30,7 @@ export default function Contact() {
                 <GrMail /><strong>E-mail:</strong><p>fernandes@adv.com.br</p><br />
                 <FaMapMarkerAlt /><strong>Localização:</strong><p>Rua Av. 28 de Março, nº000 - Sala 3</p><br />
                 <FaClock /><strong>Horário de Atendimento:</strong><p>De segunda a sexta, das 9h às 17h.</p><br />
-                <strong>Redes sociais</strong><p><FaFacebook /><FaInstagram /></p><br />
+                <strong>Redes sociais</strong><p><a href='/'><FaFacebook /></a><a href='/'><FaInstagram /></a></p><br />
             </div>
 
             <div className={styles.contact_map}>
