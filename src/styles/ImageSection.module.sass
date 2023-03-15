@@ -1,17 +1,27 @@
+
 .ImageSection
     position: relative
-    
-.imgDesc
-    width: 100%
-    position: absolute
-    bottom: 0
-    margin-bottom: 4px
-    background-color: rgba(29, 75, 102, .5)
-    color: #fff
-    padding: 2rem .5rem
-    border-top: 1px solid #D28930
-    border-bottom: 1px solid #D28930
-    text-align: center
-    span
-        font-size: 1rem
-        background-color: rgba(0, 0, 0, 0)
+    max-height: 75vh
+    display: flex
+    flex-direction: column
+    .image, img
+        width: 100% !important
+        position: relative
+    .imgDesc
+        width: 100%
+        position: absolute
+        bottom: 0
+        background-color: rgba(29, 75, 102, .5)
+        color: #fff
+        padding: 2rem .5rem
+        border-top: 1px solid #D28930
+        border-bottom: 1px solid #D28930
+        text-align: center
+        span
+            font-size: 1rem
+            background-color: rgba(0, 0, 0, 0)
+
+@media screen and (min-width: 1240px)
+    .imgDesc
+        span
+            font-size: 2rem !important

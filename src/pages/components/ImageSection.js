@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import React from 'react'
 import bgImage from '../../../public/image4.jpg'
 
@@ -9,12 +9,16 @@ export default function ImageSection() {
     <div id='home' className={styles.ImageSection}>
       <Image 
       src={bgImage}
-      alt="backgrund"
+      alt="background image"
       layout='responsive'
+      width={300}
+      height={300}
+      objectFit='cover'
+      objectPosition='left'
+      className={styles.image}
       />
       <div className={styles.imgDesc}>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lacinia purus. Aenean eget dapibus magna.
-        Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        <span>Ética, profissionalismo, transparencia e cliente satisfeito.
         </span>
       </div>
     </div>

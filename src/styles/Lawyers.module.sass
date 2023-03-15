@@ -15,21 +15,24 @@
 
     .lawyers_wrapper
         display: flex
-        flex-direction: row
         justify-content: space-around
         flex-wrap: wrap
+        padding: 0 .5rem
 
         .lawyer_card
-            width: auto
+            width: 100%
+            height: auto
+            position: relative
 
             .lawyer_image
-                height: 500px
                 width: auto
-                border: 1px solid #D28930
+                border: 1px solid #D28930 !important
+                border-top-left-radius: 20px
+                border-top-right-radius: 20px
+
             .lawer_description
-                position: relative
+                top: 100%
                 background-color: #1D4B66
-                top: -10px
                 margin-bottom: 2rem
                 padding: 1rem 0
                 color: #F4EFE7
@@ -41,3 +44,7 @@
                     font-family: 'Cinzel', serif
                 span
                     background-color: rgba(0, 0, 0, 0)
+
+@media screen and (min-width: 1024px)
+    .lawyer_card
+        width: 48% !important

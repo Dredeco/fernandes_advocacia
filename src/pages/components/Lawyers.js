@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 import Lawer1 from '../../../public/lawyer1.jpg'
 import Lawer2 from '../../../public/lawyer2.jpg'
@@ -20,7 +20,15 @@ export default function Lawyers() {
         <div className={styles.lawyers_wrapper}>
             {lawyers.map((lawyer) => (
                 <div className={styles.lawyer_card}>
-                    <Image src={lawyer.image} className={styles.lawyer_image}/>
+                    <Image 
+                        src={lawyer.image} 
+                        width={300} 
+                        height={300} 
+                        layout='responsive' 
+                        objectFit='cover' 
+                        objectPosition='top' 
+                        className={styles.lawyer_image}
+                    />
                     <div className={styles.lawer_description}>
                         <h2>{lawyer.name}</h2>
                         <span>{lawyer.oab}</span>

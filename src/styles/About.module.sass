@@ -1,16 +1,42 @@
 .about
-    background-color: #F4EFE7
     position: relative
     padding-top: 5rem
     color: #404040
-    h1, p, strong
-        display: block
-        padding:  0px 20px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    width: 100%
+    height: 100%
+    align-items: center
+    text-align: center
+    background: linear-gradient(180deg, rgba(210,137,48,1) 0%, rgba(210,137,48,1) 9%, rgba(244,239,231,1) 100%)
     h1
-        color: #D28930
-        padding-top: 20px
-    strong
-        padding: 20px 20px
+        color: #fff
+        margin-bottom: 1rem
+    .aboutGrid
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        padding: 0 .5rem
+        max-width: 1240px
+        .aboutDescription
+            padding: 1rem .5rem
+            strong
+                font-size: 1.5rem
+                display: inline-block
+                padding: 1rem 0
+        img
+            margin-top: 1rem
+            border: 2px solid #D28930
+            border-radius: 20px
 
-    img
-        padding-top: 5rem
+@media screen and (min-width: 1024px)
+    .aboutGrid
+        .aboutDescription
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 50%
+        img
+            width: 50% !important
+            margin-top: 0rem !important
