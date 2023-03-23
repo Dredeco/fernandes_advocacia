@@ -5,7 +5,7 @@ import styles from '@/styles/Navbar.module.sass'
 
 export default function Navbar() {
     let navLinks =[
-        {name:"Início",link:"#home"},
+        {name:"Início",link:"#"},
         {name:"Escritório",link:"#about"},
         {name:"Áreas de Atuação",link:"#actuation"},
         {name: "Advogados", link: "#lawyers"},
@@ -19,7 +19,7 @@ export default function Navbar() {
       let [open,setOpen]=useState(false);
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} active`}>
         <span className={styles.logo}>Fernandes Advocacia</span>
 
         <div className={`${styles.mobile_links} ${open ? "" : styles.close}`}>

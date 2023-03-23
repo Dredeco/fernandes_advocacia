@@ -10,7 +10,7 @@ export default function ImageSection() {
       <Image 
       src={bgImage}
       alt="background image"
-      layout='responsive'
+      layout='fill'
       width={300}
       height={300}
       objectFit='cover'
@@ -18,8 +18,8 @@ export default function ImageSection() {
       className={styles.image}
       />
       <div className={styles.imgDesc}>
-        <span>Ética, profissionalismo, transparencia e cliente satisfeito.
-        </span>
+        <span className={styles.title}>Proteja seus direitos com a ajuda de especialistas em advocacia</span>
+        <span className={styles.subtitle}>Conte com a nossa equipe para solucionar seus problemas jurídicos e garantir justiça em todas as áreas do direito.</span>
       </div>
     </div>
   )

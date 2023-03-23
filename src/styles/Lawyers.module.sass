@@ -1,13 +1,18 @@
+@use 'variables'
+    
 .lawyers
     flex-direction: column
     width: 100%
-    padding-top: 5rem
+    margin-top: 3rem
+    padding-top: 5rem !important
     text-align: center
-    color: #404040
+    color: variables.$Branco
+    background-color: variables.$Bege
+    padding: 0 .5rem
     h1
         text-decoration: underline
         text-underline-offset: 10px 
-        text-decoration-color: #D28930
+        text-decoration-color: variables.$Preto
     p
         font-size: 20px
         padding-top: 1rem
@@ -26,24 +31,21 @@
 
             .lawyer_image
                 width: auto
-                border: 1px solid #D28930 !important
+                border: 1px solid variables.$Preto !important
                 border-top-left-radius: 20px
                 border-top-right-radius: 20px
 
             .lawer_description
                 top: 100%
-                background-color: #1D4B66
+                background-color: variables.$Preto
                 margin-bottom: 2rem
                 padding: 1rem 0
                 color: #F4EFE7
-                border: 2px solid #D28930
+                border: 2px solid variables.$Preto
                 border-bottom-left-radius: 20px
                 border-bottom-right-radius: 20px
                 h2
-                    background-color: rgba(0, 0, 0, 0)
-                    font-family: 'Cinzel', serif
-                span
-                    background-color: rgba(0, 0, 0, 0)
+                    font-family: variables.$AbrilFont
 
 @media screen and (min-width: 1024px)
     .lawyer_card
